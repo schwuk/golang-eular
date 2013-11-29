@@ -1,5 +1,5 @@
 /*
-Solution to problem 1 in Project Euler: http://projecteuler.net/problem=1
+Solution to problem 2 in Project Euler: http://projecteuler.net/problem=2
 
 Copyright (C) 2013  David Murphy <dave@schwuk.com>
 
@@ -19,8 +19,8 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
 package main
 
 import (
-    "fmt"
-    "math"
+	"fmt"
+	"math"
 )
 
 // Solution to problem 2 in Project Euler: http://projecteuler.net/problem=2
@@ -33,19 +33,17 @@ import (
 // By considering the terms in the Fibonacci sequence whose values do not
 // exceed four million, find the sum of the even-valued terms.
 func Solution() (total int) {
-    total = 0
+	total = 0
 
-    for a, b := 0, 1; a < 4000000; a, b = b, a+b {
-        if math.Mod(float64(a), 2) == 0 {
-            total += a
-        }
-    }
+	for a, b := 0, 1; a < 4000000; a, b = b, a+b {
+		if math.Mod(float64(a), 2) == 0 {
+			total += a
+		}
+	}
 
-    return
+	return
 }
 
-
-
 func main() {
-    fmt.Println(Solution())
+	fmt.Println(Solution())
 }
