@@ -1,0 +1,9 @@
+#!/bin/sh
+
+SOLUTION=`pwd`/problems/problem_${1}.go
+
+if [ -e $SOLUTION ]; then
+    exec `which go` run $SOLUTION
+else
+    echo "That problem hasn't been solved yet!"
+fi
