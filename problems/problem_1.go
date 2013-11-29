@@ -1,5 +1,5 @@
 /*
-Solution to problem 1 in Project Eular: http://projecteuler.net/problem=1
+Solution to problem 1 in Project Euler: http://projecteuler.net/problem=1
 
 Copyright (C) 2013  David Murphy <dave@schwuk.com>
 
